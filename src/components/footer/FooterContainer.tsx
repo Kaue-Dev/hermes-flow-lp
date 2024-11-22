@@ -24,7 +24,7 @@ export function FooterContainer() {
             <Link href="/" target="_blank" className="font-light text-white/70">Insagram</Link>
           </div>
         </div>
-        <Image src="/logo.svg" alt="logo" width={100} height={100} />
+        <Image src="/logo.svg" alt="logo" width={130} height={33} />
       </FooterContent>
     </footer>
   )
