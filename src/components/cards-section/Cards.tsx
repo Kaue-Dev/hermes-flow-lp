@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export function Cards() {
   return (
-    <div className="max-w-[1200px] flex flex-col gap-20 mb-14">
-      <div className="flex items-center gap-6">
+    <div className="max-w-[1200px] flex flex-col gap-20 mb-14 max-tablet:w-[90%] max-tablet:mb-4 max-tablet:gap-10">
+      <div className="flex items-center gap-6 max-tablet:flex-col max-tablet:gap-10">
         <Card
           icon={<LayoutDashboard size={24} />}
           title="Painel de Controle"
@@ -34,9 +34,9 @@ export function Cards() {
           image="/print-hermes.png"
         />
       </div>
-      <div className="p-14 rounded-[20px] shadow-purple">
+      <div className="p-14 rounded-[20px] shadow-purple max-tablet:p-7">
         <div className="max-w-3xl flex flex-col items-center gap-6 mx-auto">
-          <h2 className="text-center font-bold text-5xl">Nossa poderosa ferramenta otimiza seu pré atendimento, seu marketing, sua empresa.</h2>
+          <h2 className="text-center font-bold text-5xl max-tablet:text-4xl">Nossa poderosa ferramenta otimiza seu pré atendimento, seu marketing, sua empresa.</h2>
           <p className="text-center">Experimente o HermesFlow e simplifique a gestão do seu negócio! Organize clientes, crie mensagens personalizadas com imagens e otimize seu pré-atendimento e marketing em uma interface prática e intuitiva. Tudo isso em um único sistema eficiente e fácil de usar.</p>
           <Button asChild variant="outline" className="bg-none bg-transparent rounded-full">
             <Link href="/">Fale Conosco</Link>

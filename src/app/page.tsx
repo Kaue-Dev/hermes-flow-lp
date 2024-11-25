@@ -12,16 +12,16 @@ export default function Home() {
   return (
     <div className="bg-darkPurple min-h-screen text-white">
       <NavbarContainer />
-      <div className="bg-background bg-no-repeat min-h-screen flex flex-col gap-20 justify-center items-center pt-40 pb-20">
+      <div className="bg-background bg-no-repeat bg-cover min-h-screen flex flex-col gap-20 justify-center items-center pt-40 pb-20 max-tablet:pt-20">
         <div className="flex flex-col gap-6 items-center">
-          <p className="border px-6 py-2 rounded-full">Simplificando a operação de mais de 5 empresas!</p>
-          <h1 className="text-center text-7xl font-medium -tracking-3 max-w-3xl">Ferramenta moderna para empresas modernas.</h1>
+          <p className="border px-6 py-2 rounded-full text-center max-tablet:max-w-[90%]">Simplificando a operação de mais de 5 empresas!</p>
+          <h1 className="text-center text-7xl font-medium -tracking-3 max-w-3xl max-tablet:text-5xl">Ferramenta moderna para empresas modernas.</h1>
           <p className="text-white/65 text-center max-w-xl text-lg">O disparador de mensagem HermesFlow oferece funcionalidades que facilitam o marketing da sua empresa.</p>
           <Button asChild variant="outline" className="bg-none bg-transparent">
             <Link href="/">Fale Conosco</Link>
           </Button>
         </div>
-        <div className="w-full">
+        <div className="w-full max-tablet:max-w-[90%]">
           <NeonGradientCard className="max-w-3xl mx-auto">
             <Image src="/print-hermes.png" width={800} height={500} layout="responsive" alt="Print Hermes Flow" className="rounded-[20px]" />
           </NeonGradientCard>
@@ -38,7 +38,7 @@ export default function Home() {
           <span className="text-xl">Fort</span>
         </Marquee>
       </div>
-      <div className="flex flex-col items-center justify-center gap-20">
+      <div className="flex flex-col items-center justify-center gap-20" id="funcionalidades">
         <div>
           <h2 className="font-medium text-center text-5xl mb-6 max-w-sm mx-auto">Funcionalidades que trabalham para você.</h2>
           <p className="text-lg text-center max-w-[460px]">Dê uma olhada nas facilidades que o HermesFlow oferece pra você.</p>

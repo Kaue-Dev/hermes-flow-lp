@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export function FooterContainer() {
   return (
-    <footer className="w-full px-5 py-16">
+    <footer className="w-full px-5 py-16 max-tablet:py-8">
       <FooterContent>
-        <div className="flex flex-col justify-between h-52">
+        <div className="flex flex-col justify-between h-52 max-tablet:h-40">
           <div>
             <h3 className="font-medium text-2xl mb-4">Contato</h3>
             <p className="font-light mb-1 text-white/70"><Link href="mailto:contato@blackhallgroup.com" target="_blank">Email: contato@blackhallgroup.com</Link></p>

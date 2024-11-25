@@ -9,7 +9,7 @@ interface CardProps {
 
 export function Card({ title, description, icon, image }: CardProps) {
   return (
-    <div className="p-14 rounded-[20px] shadow-purple flex items-center justify-between gap-3">
+    <div className="p-14 rounded-[20px] shadow-purple flex items-center justify-between gap-3 max-tablet:p-7 max-tablet:flex-col">
       <div className="w-full flex flex-col gap-3 max-w-md">
         <div className="border border-[#5C4D7B] p-2 w-fit rounded-md shadow-icon mb-2">
           {icon}

@@ -8,6 +8,9 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+		screens: {
+			'tablet': '640px',
+		},
   	extend: {
 			boxShadow: {
 				'purple': '0 0 10px 5px rgba(187, 155, 255, 0.15)',
